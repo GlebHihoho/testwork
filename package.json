@@ -1,0 +1,39 @@
+{
+  "name": "testwork",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Тестовый макет для 'Студия Борового'",
+  "author": "Gleb Motuz",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "6.4.1",
+    "browser-sync": "2.15.0",
+    "gulp": "3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "precss": "1.4.0"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "postcss/**/*.{css,pcss}"
+  ],
+  "engines": {
+    "node": "6.5"
+  }
+}
