@@ -2,9 +2,13 @@
   @mixin container;
   padding-top: 25px;
   padding-bottom: 25px;
+  position: relative;
 
   background-color: white;
-  border-bottom: 1px solid #dbddde;
+
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+  }
 }
 
 .header__img {
@@ -41,10 +45,6 @@
     margin-top: -40px;
     margin-right: 35px;
   }
-  /*float: right;
-  margin-top: -40px;
-  margin-right: 35px;
-  position: relative;*/
 }
 
 .header__input {
@@ -83,12 +83,44 @@
   height: 15px;
 }
 
-.header__search:hover .header__input-img,
-.header__input:focus + .header__input-img {
+.header__input:hover .header__input-img,
+.header__input:focus + .header__input-img,
+.header__form:hover .header__input-img {
   background-image: url("../img/search-hover.png");
 }
 
-.header__search:hover .header__input,
+.header__form:hover .header__input,
 .header__input:focus {
   border-color: orange;
+}
+
+/* ----- Кнопка ----- */
+
+.header__form {
+  display: inline-block;
+}
+
+.header__btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin-left: 30px;
+  outline: none;
+
+  cursor: pointer;
+
+  border: none;
+  background-color: white;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.open-close-js {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }

@@ -1,29 +1,60 @@
 .nav {
   @mixin container;
+  position: absolute;
+
+  z-index: 100;
   background-color: white;
+
+  @media (min-width: 768px) {
+    position: relative;
+    margin-top: 25px;
+    border-top: 1px solid #dbddde;
+  }
 }
 
 .nav__list {
   @mixin margin-reset;
-  margin-left: 100px;
+  margin-top: 20px;
   list-style: none;
 
   font-size: 0;
   line-height: 0;
+
+  @media (min-width: 768px) {
+    margin-left: 15px;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1023px) {
+    margin-left: 100px;
+  }
 }
 
 .nav__item-list {
-  display: inline-block;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
 .nav__link {
-  color: black;
   display: block;
-  text-decoration: none;
   padding: 15px 20px;
+  border-bottom: 1px solid #aeaeae;
+
+  text-decoration: none;
+  text-align: center;
+
+  color: black;
   font-size: 15px;
   font-weight: 700;
   line-height: 20px;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
 }
 
 .nav__link--active {

@@ -3,3 +3,7 @@ body {
   background-color: #aeaeae;
   font-family: 'Roboto', Arial, sans-serif;
 }
+
+a img {
+  border: none;
+}

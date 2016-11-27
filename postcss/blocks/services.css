@@ -8,21 +8,40 @@
 }
 
 .services__container {
-  margin: 0 35px;
+  @media (min-width: 768px) {
+    margin: 0 10px;
+  }
+
+  @media (min-width: 1023px) {
+    margin: 0 18px;
+  }
+
+  @media (min-width: 1280px) {
+    margin: 0 35px;
+  }
 }
 
 .services__card {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0 20px;
+  display: block;
+  padding-left: 50px;
 
   text-decoration: none;
   color: #3c4148;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+  }
 }
 
 .services__card:hover {
   background-color: #eee;
-  outline: 1px solid #e6e6e6;
+
+
+  @media (min-width: 768px) {
+    outline: 1px solid #e6e6e6;
+  }
 }
 
 .services__img {
@@ -35,12 +54,16 @@
   display: inline-block;
   vertical-align: middle;
 
-  /*width: 130px;*/
   padding-left: 15px;
   padding-top: 48px;
   padding-bottom: 45px;
 
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 17px;
+  line-height: 20px;
   font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }

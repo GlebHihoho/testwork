@@ -2,9 +2,13 @@
   position: absolute;
   @mixin margin-reset;
   bottom: 30px;
-  left: 45%;
+  left: 33%;
 
   list-style: none;
+
+  @media (min-width: 768px) {
+    left: 45%;
+  }
 }
 
 .slick-dots li {
