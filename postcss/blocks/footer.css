@@ -1,0 +1,5 @@
+.footer {
+  @mixin container;
+  height: 115px;
+  background-color: white;
+}

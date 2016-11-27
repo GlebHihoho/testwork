@@ -1,0 +1,38 @@
+.nav {
+  @mixin container;
+  background-color: white;
+}
+
+.nav__list {
+  @mixin margin-reset;
+  margin-left: 100px;
+  list-style: none;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.nav__item-list {
+  display: inline-block;
+}
+
+.nav__link {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.nav__link--active {
+  color: white;
+  background-color: #3c4148;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: white;
+  background-color: #f29700;
+}

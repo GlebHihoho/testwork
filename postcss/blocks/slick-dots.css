@@ -1,0 +1,38 @@
+.slick-dots {
+  position: absolute;
+  @mixin margin-reset;
+  bottom: 30px;
+  left: 45%;
+
+  list-style: none;
+}
+
+.slick-dots li {
+  display: inline-block;
+}
+
+.slick-dots button {
+  @mixin margin-reset;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid grey;
+  outline: none;
+
+  font-size: 0;
+  cursor: pointer;
+}
+
+.slick-active button {
+  background-color: orange;
+  border: none;
+  outline: none;
+}
+
+.slick-dots button:hover {
+  background-color: #877b6d;
+  outline: none;
+}
