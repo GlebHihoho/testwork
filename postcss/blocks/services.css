@@ -9,61 +9,75 @@
 
 .services__container {
   @media (min-width: 768px) {
-    margin: 0 10px;
+    margin: 0 22px;
   }
 
   @media (min-width: 1023px) {
-    margin: 0 18px;
+    margin: 0 34px;
   }
 
   @media (min-width: 1280px) {
-    margin: 0 35px;
+    margin: 0 50px;
   }
 }
 
 .services__card {
   display: block;
-  padding-left: 50px;
+  padding: 50px 10px 45px 110px;
 
+  background-repeat: no-repeat;
+  background-position: 15% 50%;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
   text-decoration: none;
   color: #3c4148;
 
   @media (min-width: 768px) {
     display: inline-block;
     vertical-align: middle;
-    padding: 0 20px;
+    padding: 50px 20px 45px 60px;
+    background-position: 10% 50%;
+
+    font-size: 13px;
+    line-height: 15px;
   }
 }
 
 .services__card:hover {
   background-color: #eee;
 
-
   @media (min-width: 768px) {
     outline: 1px solid #e6e6e6;
   }
 }
 
-.services__img {
-  display: inline-block;
-  vertical-align: middle;
+.services__building {
+  background-image: url("../img/engineering-icon.png");
+  background-size: 27px 42px;
 }
 
-.services__text {
-  @mixin margin-reset;
-  display: inline-block;
-  vertical-align: middle;
+.services__engineering {
+  background-image: url("../img/building-icon.png");
+  background-size: 36px 37px;
 
-  padding-left: 15px;
-  padding-top: 48px;
-  padding-bottom: 45px;
-
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 700;
-
-  @media (min-width: 768px) {
-    font-size: 13px;
-    line-height: 15px;
+  @media (min-width: 768px){
+    background-position: 5% 50%;
   }
+}
+
+.services__expert {
+  background-image: url("../img/expert-icon.png");
+  background-size: 26px 36px;
+}
+
+.services__service {
+  background-image: url("../img/service-icon.png");
+  background-size: 36px 34px;
+}
+
+.services__test {
+  background-image: url("../img/test-icon.png");
+  background-size: 31px 40px;
 }
