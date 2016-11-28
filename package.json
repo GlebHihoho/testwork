@@ -15,14 +15,19 @@
   "devDependencies": {
     "autoprefixer": "6.4.1",
     "browser-sync": "2.15.0",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
     "gulp": "3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.0.3",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
-    "precss": "1.4.0"
+    "gulp-rename": "^1.2.2",
+    "run-sequence": "^1.2.2",
+    "precss": "^1.4.0"
   },
   "scripts": {
-    "test": "editorconfig-cli",
-    "build": "gulp style",
+    "build": "gulp docs",
     "start": "gulp serve"
   },
   "editorconfig-cli": [

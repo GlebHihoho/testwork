@@ -2,7 +2,7 @@
   position: absolute;
   @mixin margin-reset;
   bottom: 30px;
-  left: 33%;
+  left: 30%;
 
   list-style: none;
 
