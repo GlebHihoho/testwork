@@ -1,1 +1,9 @@
+@import "mixin.css";
+@import "global.css";
+
 @import "blocks/header.css";
+@import "blocks/nav.css";
+@import "blocks/slider.css";
+@import "blocks/slick-dots.css";
+@import "blocks/services.css";
+@import "blocks/footer.css";
